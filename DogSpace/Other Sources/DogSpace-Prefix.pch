@@ -1,0 +1,33 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+
+#   define screenWidth      [UIScreen mainScreen].bounds.size.width
+#   define screenHeight     [UIScreen mainScreen].bounds.size.height-20
+
+#   define RGB(r, g, b)     [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+
+#   define listBackgroundColor  RGB(46, 156, 156)
+#   define cellBackgroundColor  RGB(22, 140, 140)
+#   define cellBackgroundColor1 RGB(78, 186, 186)
+#   define titleColor           RGB(172, 237, 237)
+#   define detailTextColor      RGB(119, 213, 213)
+
+#endif
+
+#ifdef DEBUG
+#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#endif
