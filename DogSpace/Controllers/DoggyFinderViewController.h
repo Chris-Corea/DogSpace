@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseUIViewController.h"
 
-@interface DoggyFinderViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface DoggyFinderViewController : BaseUIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

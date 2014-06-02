@@ -11,23 +11,30 @@
 #endif
 
 #ifdef __OBJC__
+
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
 
-#   define screenWidth      [UIScreen mainScreen].bounds.size.width
-#   define screenHeight     [UIScreen mainScreen].bounds.size.height-20
+//    #define screenWidth      [UIScreen mainScreen].bounds.size.width
+//    #define screenHeight     [UIScreen mainScreen].bounds.size.height-20
 
-#   define RGB(r, g, b)     [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+    #define RGB(r, g, b)     [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+    #define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 
-#   define listBackgroundColor  RGB(46, 156, 156)
-#   define cellBackgroundColor  RGB(22, 140, 140)
-#   define cellBackgroundColor1 RGB(78, 186, 186)
-#   define titleColor           RGB(172, 237, 237)
-#   define detailTextColor      RGB(119, 213, 213)
+    #define listBackgroundColor  RGB(46, 156, 156)
+    #define detailTextColor      RGB(22, 140, 140)
+    #define titleColor           RGB(119, 213, 213)
+    #define cellBackgroundColor  RGB(172, 237, 237)
+    //#   define detailTextColor      RGB(78, 186, 186)
+
+    #define offWhiteColor        RGB(249,247,244)
+
+
+    #define IS_BELOW_IOS7   ([[[UIDevice currentDevice] systemVersion] compare:@"7"] == NSOrderedAscending)
 
 #endif
 
 #ifdef DEBUG
-#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #endif

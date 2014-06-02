@@ -16,9 +16,31 @@
     // Override point for customization after application launch.
     CGFloat heightOffset = [[UIApplication sharedApplication] statusBarFrame].size.height;
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[DoggyFinderViewController alloc] init];
+    [self customizeAppearance];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[DoggyFinderViewController alloc] init]];
+    self.window.rootViewController = navigationController;
+    self.window.backgroundColor = offWhiteColor;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)customizeAppearance {
+    id navigationBarAppearance = [UINavigationBar appearance];
+    [navigationBarAppearance setBackgroundImage:[UIImage imageNamed:@"nav-bar-background.png"] forBarMetrics:UIBarMetricsDefault];
+    [navigationBarAppearance setTitleTextAttributes:@{
+            UITextAttributeTextColor : [UIColor whiteColor],
+            UITextAttributeFont: [UIFont boldSystemFontOfSize:16.0f],
+            UITextAttributeTextShadowColor: RGBA(0, 0, 0, .1),
+            UITextAttributeTextShadowOffset: [NSValue valueWithCGSize:CGSizeMake(1.0,1.0)]
+    }];
+
+    if (!IS_BELOW_IOS7) {
+        [navigationBarAppearance setTintColor:[UIColor whiteColor]];
+    }
+
+    id barButtonAppearanceInNavBar = [UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil];
+    [barButtonAppearanceInNavBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12]} forState:UIControlStateNormal];
+    [barButtonAppearanceInNavBar setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -2) forBarMetrics:UIBarMetricsDefault];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

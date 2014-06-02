@@ -26,10 +26,15 @@
 		4A56BB9419350141007C4A52 /* DoggyFinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A56BB9319350141007C4A52 /* DoggyFinderViewController.m */; };
 		A7963024EFAB68603B689C0B /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = A7963A5497BF0F52ED9118F5 /* Dog.m */; };
 		A796303C677F169683B69193 /* UIView+ViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A79638B5286D82141219844C /* UIView+ViewAdditions.m */; };
+		A7963183245B0EED0FC2C270 /* doggy-placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7963A9A17FBDC7440C7A564 /* doggy-placeholder@2x.png */; };
 		A796342D0DBDC33DBDC56FA6 /* DoggyFinderListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7963683B071A61D8956ABB0 /* DoggyFinderListTableViewCell.m */; };
+		A796350C2E14895552134BB8 /* nav-bar-background.png in Resources */ = {isa = PBXBuildFile; fileRef = A796374FD9B459F0E0BC286F /* nav-bar-background.png */; };
+		A796383B2F05C1BEA464E5B9 /* BaseUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79636184B3ECA093CCAD79C /* BaseUIViewController.m */; };
+		A796389083C38D9727F87F90 /* DogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7963CA0D6C6C9B4065607F4 /* DogDetailViewController.m */; };
 		A7963A09EB8AFAACEBEAF0D6 /* accessory-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A79633594CAA962017B747E1 /* accessory-arrow.png */; };
 		A7963BBCAED1809E5C0979AD /* accessory-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A79637D8D6C2EFFC268A5930 /* accessory-arrow@2x.png */; };
-		A7963E8EE99D1BC6FF1D1FED /* doggy-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A7963063F15F45A9138A7947 /* doggy-placeholder.png */; };
+		A7963D3CA116804B939BC5BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A79631371ED29E3EB3B627C8 /* Localizable.strings */; };
+		A7963DADDA069C69D8741D6C /* doggy-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A79631977988A500C7058058 /* doggy-placeholder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,15 +68,22 @@
 		4A56BB8A1934F7ED007C4A52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4A56BB9219350141007C4A52 /* DoggyFinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoggyFinderViewController.h; sourceTree = "<group>"; };
 		4A56BB9319350141007C4A52 /* DoggyFinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoggyFinderViewController.m; sourceTree = "<group>"; };
-		A7963063F15F45A9138A7947 /* doggy-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doggy-placeholder.png"; sourceTree = "<group>"; };
 		A79630A50DB9650B1629B4CF /* UIView+ViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewAdditions.h"; sourceTree = "<group>"; };
+		A79631371ED29E3EB3B627C8 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A79631977988A500C7058058 /* doggy-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doggy-placeholder.png"; sourceTree = "<group>"; };
+		A796323C276A4C8A73FC3FDC /* DogDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DogDetailViewController.h; sourceTree = "<group>"; };
 		A79633594CAA962017B747E1 /* accessory-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessory-arrow.png"; sourceTree = "<group>"; };
 		A796349A58F7DB670452C9D5 /* DoggyFinderListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoggyFinderListTableViewCell.h; sourceTree = "<group>"; };
 		A79634BBC3309D98B47706BE /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		A79636184B3ECA093CCAD79C /* BaseUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseUIViewController.m; sourceTree = "<group>"; };
 		A7963683B071A61D8956ABB0 /* DoggyFinderListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoggyFinderListTableViewCell.m; sourceTree = "<group>"; };
+		A796374FD9B459F0E0BC286F /* nav-bar-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-bar-background.png"; sourceTree = "<group>"; };
 		A79637D8D6C2EFFC268A5930 /* accessory-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessory-arrow@2x.png"; sourceTree = "<group>"; };
 		A79638B5286D82141219844C /* UIView+ViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewAdditions.m"; sourceTree = "<group>"; };
 		A7963A5497BF0F52ED9118F5 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		A7963A9A17FBDC7440C7A564 /* doggy-placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doggy-placeholder@2x.png"; sourceTree = "<group>"; };
+		A7963CA0D6C6C9B4065607F4 /* DogDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DogDetailViewController.m; sourceTree = "<group>"; };
+		A7963CCA0E37CF15CBF87F60 /* BaseUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUIViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +204,7 @@
 				4A56BB881934F7ED007C4A52 /* InfoPlist.strings */,
 				4A56BB8A1934F7ED007C4A52 /* Images.xcassets */,
 				A7963A647CC1D99FE09C9AC5 /* Images */,
+				A79631371ED29E3EB3B627C8 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -201,6 +214,10 @@
 			children = (
 				4A56BB9219350141007C4A52 /* DoggyFinderViewController.h */,
 				4A56BB9319350141007C4A52 /* DoggyFinderViewController.m */,
+				A7963CA0D6C6C9B4065607F4 /* DogDetailViewController.m */,
+				A796323C276A4C8A73FC3FDC /* DogDetailViewController.h */,
+				A79636184B3ECA093CCAD79C /* BaseUIViewController.m */,
+				A7963CCA0E37CF15CBF87F60 /* BaseUIViewController.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -208,9 +225,11 @@
 		A7963A647CC1D99FE09C9AC5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				A7963063F15F45A9138A7947 /* doggy-placeholder.png */,
 				A79633594CAA962017B747E1 /* accessory-arrow.png */,
 				A79637D8D6C2EFFC268A5930 /* accessory-arrow@2x.png */,
+				A796374FD9B459F0E0BC286F /* nav-bar-background.png */,
+				A79631977988A500C7058058 /* doggy-placeholder.png */,
+				A7963A9A17FBDC7440C7A564 /* doggy-placeholder@2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -293,9 +312,12 @@
 				4A56BB901934F7ED007C4A52 /* Images.xcassets in Resources */,
 				4A56BB8E1934F7ED007C4A52 /* DogSpace-Info.plist in Resources */,
 				4A56BB8F1934F7ED007C4A52 /* InfoPlist.strings in Resources */,
-				A7963E8EE99D1BC6FF1D1FED /* doggy-placeholder.png in Resources */,
 				A7963A09EB8AFAACEBEAF0D6 /* accessory-arrow.png in Resources */,
 				A7963BBCAED1809E5C0979AD /* accessory-arrow@2x.png in Resources */,
+				A796350C2E14895552134BB8 /* nav-bar-background.png in Resources */,
+				A7963DADDA069C69D8741D6C /* doggy-placeholder.png in Resources */,
+				A7963183245B0EED0FC2C270 /* doggy-placeholder@2x.png in Resources */,
+				A7963D3CA116804B939BC5BB /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +343,8 @@
 				A796342D0DBDC33DBDC56FA6 /* DoggyFinderListTableViewCell.m in Sources */,
 				A7963024EFAB68603B689C0B /* Dog.m in Sources */,
 				A796303C677F169683B69193 /* UIView+ViewAdditions.m in Sources */,
+				A796389083C38D9727F87F90 /* DogDetailViewController.m in Sources */,
+				A796383B2F05C1BEA464E5B9 /* BaseUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

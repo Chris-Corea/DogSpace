@@ -25,7 +25,7 @@
 
         nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(labelXPos, 5, 180, 20)];
         nameLabel.font = [UIFont boldSystemFontOfSize:15];
-        nameLabel.textColor = titleColor;
+        nameLabel.textColor = RGB(22, 140, 140);
         nameLabel.numberOfLines = 1;
         [self.contentView addSubview:nameLabel];
 
@@ -46,67 +46,7 @@
     nameLabel.text = dog.name;
     descriptionLabel.text = dog.description;
 
-    self.backgroundColor = cellBackgroundColor1;
+    self.backgroundColor = cellBackgroundColor;
 }
-
-//- (void)updateConstraints {
-//    [super updateConstraints];
-//
-//    for (UIView *view in self.contentView.subviews) {
-//        NSArray *constraints = [self constraintsReferencingView:view];
-//        for (NSLayoutConstraint *constraint in constraints) {
-//            [self.contentView removeConstraint:constraint];
-//        }
-//    }
-//
-//    NSDictionary *uberViews = @{@"name": nameLabel, @"description": descriptionLabel};
-//    [uberView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-2-[name]-2-|" options:NSLayoutFormatAlignAllCenterY metrics:nil views:uberViews]];
-//    [uberView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-2-[description]-2-|" options:NSLayoutFormatAlignAllCenterY metrics:nil views:uberViews]];
-//    [uberView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-2-[name]-5-[description(==name)]-2-|" options:0 metrics:nil views:uberViews]];
-//
-//    [uberView setContentCompressionResistancePriority:750 forAxis:UILayoutConstraintAxisHorizontal];
-//    [uberView setContentCompressionResistancePriority:750 forAxis:UILayoutConstraintAxisVertical];
-//
-//    NSDictionary *views = @{@"petPicture": petPicture, @"accessoryImage":accessoryImage, @"uberView":uberView};
-//    [self.contentView addConstraints:[NSLayoutConstraint
-//            constraintsWithVisualFormat:@"H:|-10-[petPicture(<=accessoryImage)]-[uberView]-2-[accessoryImage]-10-|"
-//                                options:NSLayoutFormatAlignAllCenterY
-//                                metrics:nil
-//                                  views:views]];
-//    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-50-[petPicture]" options:0 metrics:nil views:views]];
-//
-//}
-//
-//- (NSArray *)constraintsReferencingView:(UIView *)theView {
-//    NSMutableArray *array = @[].mutableCopy;
-//    NSArray *views = [@[self] arrayByAddingObjectsFromArray:self.subviews];
-//
-//    for (UIView *view in views)
-//        for (NSLayoutConstraint *constraint in view.constraints) {
-//            if (![constraint.class isEqual:[NSLayoutConstraint class]])
-//                continue;
-//
-//            if ([self constraint:constraint refersToView:theView])
-//                [array addObject:constraint];
-//        }
-//
-//    return array;
-//}
-//
-//- (BOOL)constraint:(NSLayoutConstraint *)constraint refersToView:(UIView *)theView {
-//    if (!theView)
-//        return NO;
-//    if (!constraint.firstItem) // shouldn't happen. Illegal
-//        return NO;
-//    if (constraint.firstItem == theView)
-//        return YES;
-//    if (!constraint.secondItem)
-//        return NO;
-//    return (constraint.secondItem == theView);
-//}
-//
-//+ (BOOL)requiresConstraintBasedLayout {
-//    return YES;
-//}
 
 @end
